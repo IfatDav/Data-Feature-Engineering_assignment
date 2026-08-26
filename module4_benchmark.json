@@ -1,0 +1,24 @@
+{
+  "name": "DS23 Module 4 Frozen Benchmark",
+  "created_utc": "2026-08-26T07:17:00",
+  "roc_auc": 0.5586,
+  "model": "LogisticRegression(max_iter=1000)",
+  "metric": "roc_auc",
+  "cv": "StratifiedKFold(5, shuffle=True, random_state=42)",
+  "seed": 42,
+  "numeric_preprocessing": "SimpleImputer(median) + StandardScaler",
+  "categorical_preprocessing": "OneHotEncoder(handle_unknown=ignore)",
+  "baseline_features": [
+    "price",
+    "freight_value",
+    "product_weight_g",
+    "product_length_cm",
+    "product_height_cm",
+    "product_width_cm"
+  ],
+  "categorical_feature": "product_category_name",
+  "n_rows": 110774,
+  "negative_rate": 0.1603,
+  "sklearn_version": "1.6.1",
+  "row_order": "sorted by order_purchase_timestamp, ascending"
+}
